@@ -1,50 +1,50 @@
 import React from 'react';
-import './App.css';
+import './App.css';  // Custom styles
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Learn English with Our Courses</h1>
-        <p>Improve your English skills with professional guidance and flexible learning options.</p>
-      </header>
+    return (
+        <div className="page-container">
+            {/* Header */}
+            <header className="header">
+                <div className="logo-section">
+                    <h1>الكويت</h1> {/* The logo text */}
+                    <img src="https://via.placeholder.com/100" alt="British Council" className="logo" />
+                </div>
+                <nav className="nav-bar">
+                    <ul>
+                        <li><a href="#">تدريس اللغة الإنجليزية</a></li>
+                        <li><a href="#">الدراسة في المملكة المتحدة</a></li>
+                        <li><a href="#">فعالياتنا</a></li>
+                        <li><a href="#">تقدم لامتحانات معنا</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-      <main>
-        <section className="intro">
-          <h2>Why Learn English?</h2>
-          <p>English is a global language spoken by millions worldwide. Whether you're preparing for exams, enhancing career prospects, or traveling, mastering English opens up countless opportunities.</p>
-        </section>
+            {/* Main Content */}
+            <main className="main-content">
+                <section className="info-section">
+                    <h2>تعلم اللغة الإنجليزية</h2>
+                    <p>
+                        تعلم اللغة الإنجليزية واستمتع بتجربة تعلم اللغة على أيدي خبراء الإنجليزية في العالم.
+                    </p>
+                </section>
 
-        <section className="courses">
-          <h2>Our English Courses</h2>
-          <ul>
-            <li>
-              <h3>Basic English</h3>
-              <p>For beginners who want to start from scratch. Learn the basics of grammar, vocabulary, and conversation.</p>
-            </li>
-            <li>
-              <h3>Intermediate English</h3>
-              <p>For learners with basic knowledge, this course enhances speaking, listening, and writing skills.</p>
-            </li>
-            <li>
-              <h3>Advanced English</h3>
-              <p>For professionals and advanced learners. Focus on fluency, academic writing, and formal communication.</p>
-            </li>
-          </ul>
-        </section>
+                <aside className="promo-section">
+                    <div className="promo">
+                        <img src="https://via.placeholder.com/200" alt="English Online" />
+                        <p>دورة `English Online` المكثفة</p>
+                        <p>خصم 20% تحسين مهاراتك في الإنجليزية</p>
+                    </div>
+                </aside>
+            </main>
 
-        <section className="cta">
-          <h2>Ready to Get Started?</h2>
-          <p>Sign up for one of our courses today and start your journey towards mastering English!</p>
-          <a href="https://www.skool.com/masterclass/about" target="_blank" rel="noopener noreferrer" className="signup-button">Sign Up Now</a>
-        </section>
-      </main>
-
-      <footer>
-        <p>© 2024 My English Academy. All Rights Reserved.</p>
-      </footer>
-    </div>
-  );
+            {/* Footer */}
+            <footer className="footer">
+                <p>جميع الحقوق محفوظة &copy; 2024</p>
+            </footer>
+        </div>
+    );
 }
 
 export default App;

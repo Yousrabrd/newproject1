@@ -1,83 +1,96 @@
-.App {
+body {
   font-family: 'Arial', sans-serif;
-  text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #fdf3e7; /* Light, warm background */
+  background-color: #f4f6f9;
 }
 
-.App-header {
-  background-color: #f4a261; /* Soft orange */
-  color: #ffffff;
+.page-container {
+  width: 100%;
+}
+
+.header {
+  background-color: #2b004d;
+  color: white;
   padding: 20px;
-  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #264653; /* Dark teal */
+.logo-section {
+  display: flex;
+  align-items: center;
 }
 
-p {
-  font-size: 1.2rem;
-  color: #333;
+.logo-section h1 {
+  margin-right: 15px;
 }
 
-main {
-  padding: 20px;
+.logo {
+  width: 50px;
 }
 
-h2 {
-  color: #2a9d8f; /* Bright teal */
-  font-size: 2rem;
-}
-
-.courses ul {
+.nav-bar ul {
   list-style: none;
-  padding: 0;
-}
-
-.courses li {
-  margin: 20px 0;
-  padding: 20px;
-  border: 1px solid #e76f51; /* Soft coral */
-  border-radius: 8px;
-  background-color: #ffddd2; /* Soft peach background */
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.courses li h3 {
-  color: #e76f51; /* Coral */
-  font-size: 1.5rem;
-}
-
-.courses li p {
-  color: #6d6875; /* Muted purple */
-}
-
-.signup-button {
-  background-color: #2a9d8f; /* Bright teal */
-  color: white;
-  border: none;
-  padding: 15px 25px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.signup-button:hover {
-  background-color: #264653; /* Dark teal on hover */
-}
-
-footer {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #264653; /* Dark teal */
-  color: white;
-}
-
-footer p {
+  display: flex;
+  gap: 15px;
   margin: 0;
+}
+
+.nav-bar ul li {
+  display: inline;
+}
+
+.nav-bar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.info-section {
+  width: 60%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promo-section {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo {
+  background-color: #f3e6ff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promo img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.promo p {
+  margin: 10px 0;
+}
+
+.footer {
+  background-color: #2b004d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
